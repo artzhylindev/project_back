@@ -1,0 +1,101 @@
+
+// ----- post ------
+
+
+
+.wrapper_forms {
+  max-width: 600px;
+  input, textarea {
+    border-radius: 5px;
+    border: 1px solid #c3c1c1;
+    resize: none;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #description {
+    padding: 5px;
+    height: 100%;
+    min-height: 150px;
+  }
+  input:focus {
+    background-color: #ececec;
+  }
+  @media (min-width: 768px) {
+
+  }
+}
+
+.wrap_table_post {
+  margin-top: 30px;
+  .table_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+  }
+  .mcol {
+    width: 100%;
+    line-height: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+  }
+  .mrow {
+
+  }
+  .table_body {
+    display: flex;
+    flex-direction: column;
+    .table_row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 5px;
+      border: 1px solid #ececec;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-shadow: 4px 4px 23px -4px rgb(34 60 80 / 20%);
+      &:nth-child(2n) {
+        background-color: #e0e0e0;
+      }
+      
+    }
+
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 50px;
+    .table_body {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .col_id {
+      width: 100px;
+      text-align: center;
+    }
+    .col_title {
+      width: 30%;
+      text-align: center;
+    }
+    .col_description {
+      text-align: center;
+      width: 60%;
+    }
+    .col_btn {
+      text-align: right;
+      width: 100px;
+    }
+  }
+}
+
+.table_post {
+  .btn-success, .btn-danger {
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
